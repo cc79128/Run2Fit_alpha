@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Run2Fit</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_start">START</string>
+    <string name="button_finish">FINISH</string>
+    <string name="button_route">HISTORY</string>
+    <string name="button_restart">RESET</string>   
+    <string name="text_title">GPS軌跡記錄範例程式</string>
+    <string name="text_content1">功能說明如下:</string>
+    <string name="text_content2">1.記錄並儲存GPS定位軌跡\n2.Google Maps上顯示行進軌跡資訊及即時定位資訊\n3.基本的軌跡紀錄管理：顯示軌跡紀錄清單及提供檔案刪除功能</string>
+    <string name="text_content3"> 版本：V1.0\n日期：2013.12.16\n維護人員：蔡馨璽 (cc79128@gmail.com)\nCopyright©All Rights Reserved for NOL Lab</string>
+    <drawable name="blue">#3799FF</drawable>
+    <drawable name="dark_blue">#0300FA</drawable>
+    <drawable name="red">#BD211F</drawable>
+    <drawable name="green">#178951</drawable>
+    <string name="text_timer">10秒後自動跳轉，或按Skip</string>
+    <drawable name="dark">#000000</drawable>
+    <drawable name="white">#FFFFFF</drawable>    
+    
+</resources>

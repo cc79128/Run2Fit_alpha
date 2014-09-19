@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+		<!--  View Title Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="REGISTER"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+        
+        <!--  Name Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+		<!--  Name TextField -->
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+        <!--  Gender Button -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender" />
+         <RadioGroup
+    		android:layout_width="wrap_content"
+   			android:layout_height="37px"
+   			android:id="@+id/radioGroup"
+    		android:orientation="horizontal" 	 >
+	   		<RadioButton
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="男"
+	    		android:id="@+id/Sex_Man"    />
+	   		<RadioButton
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="女"
+	    		android:id="@+id/Sex_Woman"    	/>
+    	</RadioGroup>   
+		
+		<!--  Email Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+		<!--  Email TextField -->
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+		<!--  Password Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+		<!--  Password TextField -->
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true" />
+        
+        <!--  Re-Password Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Retype Password " />
+		<!--  Re-Password TextField -->
+        <EditText
+            android:id="@+id/registerRePassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true" />
+        
+        <RelativeLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content">
+		          <TextView
+		              	android:id="@+id/text_height" 
+		              	android:layout_width="95dip"
+		                android:layout_height="wrap_content"
+		                android:text="Height"/>
+		          <EditText android:id="@+id/reg_height"
+		                android:layout_width="100dip"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:layout_below="@+id/text_height"/>
+		          <TextView
+		              	android:id="@+id/text_cm" 
+		              	android:layout_width="25dip"
+		                android:layout_height="wrap_content"
+		                android:layout_toRightOf="@+id/reg_height"
+		                android:layout_below="@+id/text_height"
+		                android:layout_marginTop="15dip"
+		                android:text="cm"/>
+		    	<!-- weight Level -->
+		          <EditText android:id="@+id/reg_weight"
+		                android:layout_width="100dip"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:layout_toRightOf="@+id/text_cm"
+		                android:layout_below="@+id/text_weight"/>
+		          <TextView
+		              	android:id="@+id/text_kg" 
+		              	android:layout_width="25dip"
+		                android:layout_height="wrap_content"
+		                android:layout_toRightOf="@+id/reg_weight"
+		                android:layout_below="@+id/text_weight"
+		                android:layout_marginTop="15dip"
+		                android:text="kg"/>
+
+		          <TextView
+		              android:id="@+id/text_weight"
+		              android:layout_width="95dip"
+		              android:layout_height="wrap_content"
+		              android:layout_above="@+id/text_cm"
+		              android:layout_alignLeft="@+id/reg_weight"
+		              android:text="Weight" />
+
+		     	</RelativeLayout>
+	          
+        
+        <!--  Error message -->
+        <TextView android:id="@+id/register_error"
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:textColor="#e30000"
+            		android:padding="10dip"
+            		android:textStyle="bold"
+            		android:visibility="gone" 	/>
+					
+		<!--  Login Button -->        
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Register" />
+
+        <!--  Link to Login Screen -->
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Already registred. Login Me!"
+            android:textColor="#21dbd4"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

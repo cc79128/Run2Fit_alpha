@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button_opengps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginTop="32dp"
+        android:text="OPEN GPS" />
+
+    <Button
+        android:id="@+id/button_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_opengps"
+        android:layout_below="@+id/button_opengps"
+        android:layout_marginTop="32dp"
+        android:text="RESUME" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_content"
+        android:layout_alignParentTop="true"
+        android:text="無可用之定位系統"
+        android:textColor="@drawable/red"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="請確認GPS定位功能已開啟\n按【OPEN GPS】可進入開啟定位服務頁面\n開啟後按【RESUME】可回到記錄軌跡頁面\n\n注意!:若未開啟GPS定位功能時按下【RESUME】依然會回到此頁面"
+        android:textSize="15sp" />
+
+</RelativeLayout>
